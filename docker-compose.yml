@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  engine:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - DEVICE=cpu # Default to CPU for portability
+    command: python pipeline/pathway_engine.py
+
+  simulator:
+    build: .
+    volumes:
+      - .:/app
+    command: python pipeline/stream_simulator.py --interval 1.5

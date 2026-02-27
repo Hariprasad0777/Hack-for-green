@@ -1,0 +1,37 @@
+[project]
+name = "offroad-segmentation"
+version = "1.0.0"
+description = "Real-time offroad terrain segmentation using UNet++ and Pathway."
+authors = [{name = "Team Offroad AI"}]
+dependencies = [
+    "torch",
+    "torchvision",
+    "pathway",
+    "opencv-python",
+    "segmentation-models-pytorch",
+    "albumentations",
+    "numpy",
+    "matplotlib",
+    "tqdm",
+    "scipy",
+    "pandas",
+]
+
+[project.scripts]
+offroad-train = "offroad_ai.cli.train:train"
+offroad-eval = "offroad_ai.cli.evaluate:evaluate"
+offroad-calibrate = "offroad_ai.cli.calibrate:calibrate"
+offroad-stream = "offroad_ai.pipeline.pathway_engine:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"

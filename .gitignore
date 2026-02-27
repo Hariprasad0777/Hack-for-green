@@ -1,0 +1,28 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Data & Models (Submissions usually only include code or sample data)
+input_stream/
+output_stream/
+data/
+weights/*.pth
+weights/*.npy
+
+# Logs and Metrics
+reports/*.csv
+reports/*.txt
+!reports/HACKATHON_REPORT.md
+
+# Notebooks
+.ipynb_checkpoints/

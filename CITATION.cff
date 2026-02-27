@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Offroad AI Team"
+    given-names: "Strategic Engineering"
+title: "OffroadTerrain AI: Reactive Streaming Segmentation for Autonomous Agents"
+version: 1.0.0
+date-released: 2026-02-27
+url: "https://github.com/pathway-hackathon/offroad-ai"
+abstract: >
+  A production-grade vision system leveraging Pathway's reactive engine 
+  for real-time semantic segmentation in unstructured environments.

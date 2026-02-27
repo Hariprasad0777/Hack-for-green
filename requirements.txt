@@ -1,0 +1,12 @@
+torch
+torchvision
+pathway
+albumentations
+opencv-python
+segmentation-models-pytorch
+tqdm
+numpy
+pandas
+scipy
+matplotlib
+scikit-learn
